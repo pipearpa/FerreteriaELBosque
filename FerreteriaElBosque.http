@@ -1,0 +1,6 @@
+@FerreteriaElBosque_HostAddress = http://localhost:5127
+
+GET {{FerreteriaElBosque_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
