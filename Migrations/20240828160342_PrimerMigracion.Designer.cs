@@ -11,8 +11,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace FerreteriaElBosque.Migrations
 {
     [DbContext(typeof(FerreteriaDbContext))]
-    [Migration("20240827012401_PrimeraMigracion")]
-    partial class PrimeraMigracion
+    [Migration("20240828160342_PrimerMigracion")]
+    partial class PrimerMigracion
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
