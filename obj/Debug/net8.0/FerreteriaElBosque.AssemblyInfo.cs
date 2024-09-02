@@ -15,7 +15,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("FerreteriaElBosque")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+616ac2838151456af2f643478c3ac7753205e58a")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+9809e5f22624aeba8a2eea159c138fd403fac903")]
 [assembly: System.Reflection.AssemblyProductAttribute("FerreteriaElBosque")]
 [assembly: System.Reflection.AssemblyTitleAttribute("FerreteriaElBosque")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
