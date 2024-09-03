@@ -13,14 +13,22 @@ namespace FerreteriaElBosque.Repositories
             _context = context;
         }
 
-        public Task AddAsync(Proveedor proveedor)
+        public async Task AddAsync(Proveedor proveedor)
         {
-            throw new NotImplementedException();
+             await _context.Set<Proveedor>().AddAsync(proveedor);
+             await _context.SaveChangesAsync();
         }
 
-        public Task DeleteAsync(int id)
+        public async Task DeleteAsync(int id)
         {
-            throw new NotImplementedException();
+           var proveedor = await GetByIdAsync(id);
+            if (proveedor != null)
+            {
+                _context.Set<Proveedor>().Remove(proveedor);
+                await _context.SaveChangesAsync();
+            }
+
+
         }
 
         public async Task<IEnumerable<Proveedor>> GetAllAsync()
@@ -34,9 +42,10 @@ namespace FerreteriaElBosque.Repositories
             return await _context.Set<Proveedor>().FindAsync();
         }
 
-        public Task UpdateAsync(Proveedor proveedor)
+        public async Task UpdateAsync(Proveedor proveedor)
         {
-            throw new NotImplementedException();
+             _context.Set<Proveedor>().Update(proveedor);
+             await _context.SaveChangesAsync();
         }
     }
 }
